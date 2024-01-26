@@ -1,5 +1,5 @@
 ﻿using MediatR;
 
 namespace Application.Users.Get;
-public record GetAllUsersQuery : IRequest<List<UserResponse>>;
+public sealed record GetAllUsersQuery : IRequest<List<UserResponse>>;
 

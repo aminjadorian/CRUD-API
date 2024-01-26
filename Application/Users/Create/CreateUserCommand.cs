@@ -2,4 +2,4 @@
 using Domain.User;
 
 namespace Application.Users.Create;
-public record CreateUserCommand(string Email, Name name) : ICommand<Guid>;
+public sealed record CreateUserCommand(string Email, Name name) : ICommand<Guid>;

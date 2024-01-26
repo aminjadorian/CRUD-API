@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Application.Users.Delete
 {
-    internal class DeleteUserCommandHandler : IRequestHandler<DeleteUserCommand>
+    public sealed class DeleteUserCommandHandler : IRequestHandler<DeleteUserCommand>
     {
         private readonly IUserRepository _userRepository;
         private readonly IUnitOfWork _unitOfWork;

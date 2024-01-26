@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Application.Users.Get
 {
-    public class GetAllUsersQueryHandler : IRequestHandler<GetAllUsersQuery, List<UserResponse>>
+    public sealed class GetAllUsersQueryHandler : IRequestHandler<GetAllUsersQuery, List<UserResponse>>
     {
         private readonly IUserRepository _userRepository;
 

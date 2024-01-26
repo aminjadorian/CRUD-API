@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Application.Users.Get
 {
-    public class GetUserQueryHandler : IRequestHandler<GetUserQuery, UserResponse>
+    public sealed class GetUserQueryHandler : IRequestHandler<GetUserQuery, UserResponse>
     {
         private readonly IUserRepository _userRepository;
 

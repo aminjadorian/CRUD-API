@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Application.Users.Create
 {
-    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand,Guid>
+    public sealed class CreateUserCommandHandler : IRequestHandler<CreateUserCommand,Guid>
     {
         private readonly IUserRepository _userRepository;
         private readonly IUnitOfWork _unitOfWork;
